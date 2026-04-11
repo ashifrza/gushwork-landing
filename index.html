@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gushwork – Creative Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============================================================
+       STICKY HEADER
+       Appears when user scrolls past hero fold; hides on scroll up.
+  ============================================================ -->
+    <header
+      class="sticky-header"
+      id="stickyHeader"
+      role="banner"
+      aria-hidden="true"
+    >
+      <div class="sticky-header__inner">
+        <a href="#" class="logo" aria-label="Gushwork Home">
+          <span class="logo__mark">G</span>
+          <span class="logo__name">Gushwork</span>
+        </a>
+        <nav aria-label="Sticky navigation">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn--sm">Let's Talk</a>
+        </nav>
+        <!-- Hamburger toggle (mobile) -->
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile slide-down nav -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#work" class="mobile-nav__link">Work</a>
+      <a href="#services" class="mobile-nav__link">Services</a>
+      <a href="#about" class="mobile-nav__link">About</a>
+      <a href="#contact" class="mobile-nav__link mobile-nav__cta">Let's Talk</a>
+    </nav>
+
+    <!-- ============================================================
+       HERO / FIRST FOLD
+       The inline nav here is hidden once the sticky header appears.
+  ============================================================ -->
+    <section class="hero" id="hero">
+      <!-- Inline nav (always visible on page load) -->
+      <div class="hero__nav">
+        <a href="#" class="logo" aria-label="Gushwork Home">
+          <span class="logo__mark">G</span>
+          <span class="logo__name">Gushwork</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn--outline">Let's Talk</a>
+        </nav>
+      </div>
+
+      <!-- Main hero copy -->
+      <div class="hero__content">
+        <p class="hero__eyebrow">✦ Creative &amp; Digital Agency</p>
+        <h1 class="hero__heading">
+          We craft<br />
+          <em>experiences</em><br />
+          that <span class="hero__accent">matter.</span>
+        </h1>
+        <p class="hero__sub">
+          Strategy · Design · Development · Motion — all under one roof, built
+          for brands that refuse to blend in.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">See Our Work</a>
+          <a href="#services" class="btn btn--ghost">What We Do ↓</a>
+        </div>
+      </div>
+
+      <!-- Decorative blobs (pure CSS) -->
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
+      <!-- Animated scroll hint -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-indicator__line"></span>
+        <span class="scroll-indicator__text">Scroll</span>
+      </div>
+    </section>
+    <!-- /.hero -->
+
+    <!-- ============================================================
+       TICKER / MARQUEE
+  ============================================================ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Brand Identity</span><span class="ticker__dot">✦</span>
+        <span>Web Design</span><span class="ticker__dot">✦</span>
+        <span>Motion Graphics</span><span class="ticker__dot">✦</span>
+        <span>UI / UX</span><span class="ticker__dot">✦</span>
+        <span>Development</span><span class="ticker__dot">✦</span>
+        <span>Strategy</span><span class="ticker__dot">✦</span>
+        <!-- Duplicate for seamless loop -->
+        <span>Brand Identity</span><span class="ticker__dot">✦</span>
+        <span>Web Design</span><span class="ticker__dot">✦</span>
+        <span>Motion Graphics</span><span class="ticker__dot">✦</span>
+        <span>UI / UX</span><span class="ticker__dot">✦</span>
+        <span>Development</span><span class="ticker__dot">✦</span>
+        <span>Strategy</span><span class="ticker__dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-heading">End-to-end creative<br />solutions.</h2>
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__num">01</div>
+            <h3 class="service-card__title">Brand Identity</h3>
+            <p class="service-card__desc">
+              Logos, visual systems, and brand guidelines that create an
+              unforgettable first impression — and every impression after.
+            </p>
+            <span class="service-card__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">02</div>
+            <h3 class="service-card__title">Web Design &amp; Dev</h3>
+            <p class="service-card__desc">
+              Pixel-perfect, performance-first websites built with clean code
+              and smooth interactions that convert visitors to customers.
+            </p>
+            <span class="service-card__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">03</div>
+            <h3 class="service-card__title">Motion &amp; Video</h3>
+            <p class="service-card__desc">
+              Scroll-stopping animations, explainer videos, and motion graphics
+              that bring your brand story to life.
+            </p>
+            <span class="service-card__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">04</div>
+            <h3 class="service-card__title">Digital Strategy</h3>
+            <p class="service-card__desc">
+              Research-led planning — from positioning and messaging to full
+              go-to-market roadmaps — to grow the right way, fast.
+            </p>
+            <span class="service-card__arrow" aria-hidden="true">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PORTFOLIO / IMAGE CAROUSEL WITH ZOOM
+       Hover over any card to see the zoomed preview overlay.
+  ============================================================ -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="work__header">
+          <div>
+            <div class="section-label">Selected Work</div>
+            <h2 class="section-heading">Projects we're<br />proud of.</h2>
+          </div>
+          <a href="#contact" class="btn btn--outline work__cta"
+            >Start a Project →</a
+          >
+        </div>
+      </div>
+
+      <!-- Full-bleed carousel container -->
+      <div
+        class="carousel"
+        id="carousel"
+        role="region"
+        aria-label="Project portfolio carousel"
+        aria-live="polite"
+      >
+        <div class="carousel__track" id="carouselTrack">
+          <!-- ── Card 1 ── -->
+          <article
+            class="carousel__card"
+            tabindex="0"
+            aria-label="Bloom Co. – Brand Identity"
+          >
+            <div class="carousel__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+                alt="Bloom Co. brand identity – colourful geometric brand patterns"
+                class="carousel__img"
+                loading="lazy"
+              />
+              <!-- Zoom overlay: shown on hover/focus via CSS -->
+              <div class="zoom-overlay" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=90"
+                  alt=""
+                  class="zoom-overlay__img"
+                />
+                <div class="zoom-overlay__label">
+                  <span>Zoom Preview</span>
+                  <span class="zoom-icon">⊕</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__info">
+              <span class="carousel__tag">Brand Identity</span>
+              <h3 class="carousel__title">Bloom Co.</h3>
+            </div>
+          </article>
+
+          <!-- ── Card 2 ── -->
+          <article
+            class="carousel__card"
+            tabindex="0"
+            aria-label="Nomad Studio – Web Design"
+          >
+            <div class="carousel__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80"
+                alt="Nomad Studio web design – dark editorial website layout"
+                class="carousel__img"
+                loading="lazy"
+              />
+              <div class="zoom-overlay" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1400&q=90"
+                  alt=""
+                  class="zoom-overlay__img"
+                />
+                <div class="zoom-overlay__label">
+                  <span>Zoom Preview</span>
+                  <span class="zoom-icon">⊕</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__info">
+              <span class="carousel__tag">Web Design</span>
+              <h3 class="carousel__title">Nomad Studio</h3>
+            </div>
+          </article>
+
+          <!-- ── Card 3 ── -->
+          <article
+            class="carousel__card"
+            tabindex="0"
+            aria-label="Pulse App – Motion Graphics"
+          >
+            <div class="carousel__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80"
+                alt="Pulse App motion graphics – abstract neon wave artwork"
+                class="carousel__img"
+                loading="lazy"
+              />
+              <div class="zoom-overlay" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1400&q=90"
+                  alt=""
+                  class="zoom-overlay__img"
+                />
+                <div class="zoom-overlay__label">
+                  <span>Zoom Preview</span>
+                  <span class="zoom-icon">⊕</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__info">
+              <span class="carousel__tag">Motion</span>
+              <h3 class="carousel__title">Pulse App</h3>
+            </div>
+          </article>
+
+          <!-- ── Card 4 ── -->
+          <article
+            class="carousel__card"
+            tabindex="0"
+            aria-label="Terra Dashboard – UI/UX"
+          >
+            <div class="carousel__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80"
+                alt="Terra Dashboard UI/UX – clean minimal dashboard interface"
+                class="carousel__img"
+                loading="lazy"
+              />
+              <div class="zoom-overlay" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1400&q=90"
+                  alt=""
+                  class="zoom-overlay__img"
+                />
+                <div class="zoom-overlay__label">
+                  <span>Zoom Preview</span>
+                  <span class="zoom-icon">⊕</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__info">
+              <span class="carousel__tag">UI / UX</span>
+              <h3 class="carousel__title">Terra Dashboard</h3>
+            </div>
+          </article>
+
+          <!-- ── Card 5 ── -->
+          <article
+            class="carousel__card"
+            tabindex="0"
+            aria-label="Aura Luxury – Brand + Web"
+          >
+            <div class="carousel__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1524275539700-cf51138f679b?w=800&q=80"
+                alt="Aura Luxury brand and web – luxury watch photography"
+                class="carousel__img"
+                loading="lazy"
+              />
+              <div class="zoom-overlay" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1524275539700-cf51138f679b?w=1400&q=90"
+                  alt=""
+                  class="zoom-overlay__img"
+                />
+                <div class="zoom-overlay__label">
+                  <span>Zoom Preview</span>
+                  <span class="zoom-icon">⊕</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__info">
+              <span class="carousel__tag">Brand + Web</span>
+              <h3 class="carousel__title">Aura Luxury</h3>
+            </div>
+          </article>
+        </div>
+        <!-- /.carousel__track -->
+
+        <!-- Prev / Next controls -->
+        <div class="carousel__controls">
+          <button
+            class="carousel__btn"
+            id="prevBtn"
+            aria-label="Previous project"
+          >
+            ←
+          </button>
+          <div
+            class="carousel__dots"
+            id="carouselDots"
+            role="tablist"
+            aria-label="Go to slide"
+          ></div>
+          <button class="carousel__btn" id="nextBtn" aria-label="Next project">
+            →
+          </button>
+        </div>
+      </div>
+      <!-- /.carousel -->
+    </section>
+
+    <!-- ============================================================
+       STATS STRIP
+  ============================================================ -->
+    <section class="stats" aria-label="Agency statistics">
+      <div class="container stats__grid">
+        <div class="stat">
+          <p class="stat__num" data-target="120">0</p>
+          <span class="stat__suffix">+</span>
+          <p class="stat__label">Projects Delivered</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num" data-target="40">0</p>
+          <span class="stat__suffix">+</span>
+          <p class="stat__label">Happy Clients</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num" data-target="7">0</p>
+          <span class="stat__suffix"></span>
+          <p class="stat__label">Years of Craft</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num" data-target="15">0</p>
+          <span class="stat__suffix"></span>
+          <p class="stat__label">Industry Awards</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__text">
+          <div class="section-label">About Us</div>
+          <h2 class="section-heading">We are obsessive<br />about craft.</h2>
+          <p>
+            Gushwork is a boutique creative agency founded on the belief that
+            great design is not decoration — it's strategy made visible. We
+            partner with startups and scale-ups to build brands and digital
+            products that earn attention, trust, and growth.
+          </p>
+          <p>
+            Every pixel, every line of code, every word we write is intentional.
+            We don't do cookie-cutter. We do original.
+          </p>
+          <a href="#contact" class="btn btn--primary">Work With Us</a>
+        </div>
+        <div class="about__img-block">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+            alt="Gushwork team collaborating around a design table"
+            class="about__img"
+            loading="lazy"
+          />
+          <div class="about__badge" aria-hidden="true">
+            <span>✦</span>
+            <span>Est. 2017</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CONTACT / CTA
+  ============================================================ -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <p class="contact__eyebrow">✦ Ready when you are</p>
+        <h2 class="contact__heading">
+          Let's build something<br /><em>extraordinary.</em>
+        </h2>
+        <a href="mailto:hello@gushwork.com" class="btn btn--primary btn--lg">
+          hello@gushwork.com
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#" class="logo" aria-label="Gushwork Home">
+          <span class="logo__mark">G</span>
+          <span class="logo__name">Gushwork</span>
+        </a>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer__copy">© 2025 Gushwork. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
