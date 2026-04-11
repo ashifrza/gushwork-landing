@@ -11,7 +11,9 @@ A fully responsive creative agency landing page built with **vanilla HTML, CSS, 
 
 ## 🔗 Live Demo
 
-> Open `index.html` in any modern browser — no server or build step required.
+**[https://gushwork-landing.vercel.app](https://gushwork-landing.vercel.app)**
+
+> Deployed on Vercel — no build step required.
 
 ---
 
