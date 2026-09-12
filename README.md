@@ -89,27 +89,11 @@ open index.html
 
 ### Sticky Header Logic
 ```js
-// Appears only after hero fold; disappears when back near top
-if (scrollY > heroBottom) {
-  scrollDown
-    ? stickyHeader.classList.add("is-visible")
-    : scrollY < 80 && stickyHeader.classList.remove("is-visible");
-}
 ```
 
 ### Carousel Offset Calculation
 ```js
-const cardWidth = cards[0].getBoundingClientRect().width;
-const offset = currentIndex * (cardWidth + GAP); // GAP = 24px matches CSS
-track.style.transform = `translateX(-${offset}px)`;
-```
 
-### Scroll Reveal
-```js
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => e.isIntersecting && e.target.classList.add("is-visible"));
-}, { threshold: 0.12 });
-```
 
 ---
 
