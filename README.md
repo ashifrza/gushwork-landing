@@ -93,8 +93,6 @@ open index.html
 
 ### Carousel Offset Calculation
 ```js
-
-
 ---
 
 ## 🌐 Browser Support
@@ -113,5 +111,4 @@ open index.html
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
 > Built with 💛 using pure HTML, CSS & JavaScript — no frameworks harmed in the making of this project.
